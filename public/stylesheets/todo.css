@@ -1,0 +1,98 @@
+h1{
+    background: #2980b9;  
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0;
+  }
+  body{
+      font-family: 'Nunito', sans-serif;
+      background: #FC354C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  .fa-plus{
+      float: right;
+  }
+  input{
+      font-size: 18px;
+      background: #f7f7f7;
+      width:100%;
+      padding: 13px 13px 20px 20px;
+      box-sizing: border-box;
+      color: #2980b9;
+      margin: 0 0;
+      border-width: 0;
+  }
+  input:focus{
+      background: white;
+      border: 3px solid #2980b9;
+      outline: none;
+  }
+  li{
+      background: white;
+      height: 40px;
+      line-height: 40px;
+      color: #666;
+  
+  }
+  li:nth-child(2n){
+      background: #f7f7f7;
+  }
+  ul{
+      list-style: none;
+      padding: 0 0;
+  }
+  #container{
+      background: #f7f7f7;
+      width: 360px;
+      margin: 100px auto;
+      box-shadow: 0 0 3px rgba(0,0,0,0.1);
+      
+      
+      
+  }
+  #d1{
+      margin: 0;
+  }
+  .completed{
+      color: gray;
+      text-decoration: line-through;
+  }
+  /* form{
+      display: inline-block;
+      margin: 0;
+  } */
+  span{
+     
+      height: 40px;
+      margin-right: 20px;
+      text-align: center;
+      color: rgb(221, 15, 15);
+      width: 0;
+      display: inline-block;
+      transition: 500ms linear;
+      opacity: 0;
+  }
+  li:hover span{
+  width: 40px;
+  opacity: 1;
+  }
+  button{
+      width: 0;
+      height: 0;
+      padding: 0;
+      transition: 500ms linear;
+      border-style: none;
+      border-width: 0;
+      margin-right: 20px;
+  }
+  li:hover button{
+      margin-right: 40px;
+  }
+  #delete-form2{
+      height: 40px;
+        margin: 0;
+    }

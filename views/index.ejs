@@ -1,0 +1,70 @@
+
+<html lang="en">
+<head>
+
+        <script
+  src="https://code.jquery.com/jquery-2.1.4.min.js"
+  integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+  crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:100,400,700,800&display=swap" rel="stylesheet">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Nikhil Purswani">
+        <script src="https://kit.fontawesome.com/c29baa370b.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheets/todo.css">
+    
+        <style type="text/css">
+       
+        </style>
+    <title> ToDo</title>
+</head>
+<body>
+   <div id="container">
+    <h1>TO-DO LIST <i class="fa fa-plus"></i></h1>
+    <form id="d1" action="/" method="post">
+        <input type="text" name="todo" placeholder="Add New Todo">
+</form>
+<ul> 
+        <%todos.forEach(function(todo){%>
+           
+            <li>
+                    <form id="delete-form2" action="/delete/<%=todo._id%>?_method=DELETE" method="post">
+                        <button type="submit"><span > 
+                                <i class="fa fa-trash"></i> 
+                            </span></button>
+                            
+                            <p class="pro" style="display: inline-block;"><%=todo.todo%></p>                  
+                        </form> 
+                        
+                
+            </li>
+       
+        <%})%>
+    </ul>
+</div>
+<script src="script/todo.js"> 
+</script>
+  <script type="text/javascript" src="todo.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
